@@ -11,15 +11,17 @@ Plug 'vim-airline/vim-airline-themes'
 Plug 'bfrg/vim-cpp-modern'
 Plug 'preservim/nerdtree'
 Plug 'pappasam/coc-jedi', { 'do': 'yarn install --frozen-lockfile && yarn build' }
+Plug 'whatyouhide/vim-gotham'
 
 call plug#end()
 
 
 set termguicolors     " enable true colors support
-colorscheme purify
+colorscheme gotham
 syntax on
 hi! Normal ctermbg=NONE guibg=NONE
 hi! NonText ctermbg=NONE guibg=NONE
+hi! LineNr ctermbg=NONE guibg=NONE
 :set number
 let g:airline_theme='transparent'
 set encoding=utf-8 
